@@ -66,9 +66,11 @@ body {
 	margin: 0 20px;
 	z-index: 0;
 }
-
+/* ICI des modif height pour  garder un bon rapport hauteur largeur  */
 .picture img {
 	width: 100%;
+	height: auto;
+
 
 }
 #about-me {
