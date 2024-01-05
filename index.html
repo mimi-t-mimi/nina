@@ -22,11 +22,11 @@
 	<div class="nav">   
 		<!-- ajouter des "title" a tous les lien ainsi qu'un aria label  -->
 		<ul> 
-			<li><a href="#about" title="À propos" aria-label="">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+			<li><a href="#about" title="À propos" aria-label="En savoir plus à propos de notre entreprise">À propos</a></li>
+			<li><a href="#gallery" title="Galerie" aria-label="Accéder à notre galerie d'images">Galerie</a></li>
+			<li><a href="#services" title="Service" aria-label="Découvrir nos services offerts">Service</a></li>
+			<li><a href="#contact" title="Contact" aria-label="Nous contacter">Contact</a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" title="Instagram" aria-label="Suivez-nous sur Instagram"><img src="assets/images/instagram.png" alt=""></a></li>
 		</ul>
 	</div>
 </div>
@@ -61,17 +61,17 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.jpg">
+		<img src="./assets/images/nina.jpg" alt="photo portrait de nina carducci jeune femme cheveux bouclée portant une tenue en jean">
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<h2 class="about-me__title">A propos de moi</h2>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
 <div id="gallery">
-	<h2 class="title">Portfolio</h2>
+	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<!-- jai fais des modif ici  faire un modif de toutes le image sur ces modeles  -->
 		<div class="gallery" style="display: none">      
@@ -89,7 +89,7 @@
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -100,32 +100,32 @@
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
-				<h3>Shooting photo</h3>
+				<h4>Shooting photo</h4>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
+				<p>350€/demi journée</p>
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
 		</div>
 		<div class="service">
 			<div class="service__description">
-				<h3>Retouches</h3>
+				<h4>Retouches</h4>
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
 			<div class="service__price">
-				<h4>50€/photo</h4>
+				<p>50€/photo</p>
 				<span>2 AR par photo</span>
 			</div>
 		</div>
 		<div class="service">
 			<div class="service__description">
-				<h3>Album photos</h3>
+				<h4>Album photos</h4>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
 			<div class="service__price">
-				<h4>400€ album A4</h4>
+				<p>400€ album A4</p>
 				<span>30 pages recto/verso</span>
 			</div>
 		</div>
@@ -134,7 +134,7 @@
 <div class="quote">
 	<figure>
 		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
@@ -142,7 +142,7 @@
 <!-- ici j'ai ajouté des modif sur le formulaire label et alt sur l'image  -->
 <div class="container">
 	<div class="form-container">
-		<h3>Une question ? Une demande de devis ?</h3>
+		<h4>Une question ? Une demande de devis ?</h4>
 		<p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 		<form action="" method="post">
 			<label for="nom">Nom</label>
