@@ -218,6 +218,7 @@
                 </div>
             </div>`);
     },
+    
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';

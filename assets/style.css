@@ -356,3 +356,46 @@ input[type="submit"] {
 	}
 }
 
+/*  style pour la partie referencement local business  */
+#contact-info {
+    background-color: #D8D3A8;
+    padding: 50px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#contact-info [itemprop="address"],
+#contact-info [itemprop="telephone"],
+#contact-info [itemprop="openingHoursSpecification"] {
+    font-weight: bold;
+}
+
+#contact-info [itemprop="openingHoursSpecification"] {
+    margin-top: 10px;
+}
+
+/* Style pour les horaires d'ouverture affichés sur la page */
+#contact-info .opening-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#contact-info .opening-hours p {
+    margin: 0 10px;
+}
+

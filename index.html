@@ -9,10 +9,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+  <!-- Balises meta pour les réseaux sociaux -->
+  <meta property="og:title" content="Nina Carducci - Photographe"/>
+  <meta property="og:description" content="Capturant les moments précieux avec passion."/>
+  <meta property="og:image" content="https://ninacarducci.github.io/assets/images/nina.jpg"/>
+  <meta property="og:url" content="https://ninacarducci.github.io"/>
+  
+  <meta name="instagram:card" content="summary_large_image"/>
+  <meta name="instagram:title" content="Nina Carducci - Photographe"/>
+  <meta name="instagram:description" content="Capturant les moments précieux avec passion."/>
+  <meta name="instagram:image" content="https://ninacarducci.github.io/assets/images/nina.jpg"/>
+
+	
 	<title>Nina Carducci - Photographe</title>
 </head>
 <body>
@@ -26,6 +34,7 @@
 			<li><a href="#gallery" title="Galerie" aria-label="Accéder à notre galerie d'images">Galerie</a></li>
 			<li><a href="#services" title="Service" aria-label="Découvrir nos services offerts">Service</a></li>
 			<li><a href="#contact" title="Contact" aria-label="Nous contacter">Contact</a></li>
+			<li><a href="#contact-info" title="Contact Info" aria-label="Voir nos coordonnées et disponibilités">Coordonnées</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" title="Instagram" aria-label="Suivez-nous sur Instagram"><img src="assets/images/instagram.png" alt="logo instagram" loading="lazy"></a></li>
 		</ul>
 	</div>
@@ -161,6 +170,31 @@
 	<div class="picture right">
 		<img src="assets/images/camera.jpg" alt="Image de l'appareil photo" loading="lazy" >
 	</div>
+</div>
+<!--  ajout de div pour le referencemet local-->
+<div id="contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
+    <h3 class="title">Coordonnées et Disponibilité</h3>
+
+    <!-- Adresse -->
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <p itemprop="streetAddress">68 avenue Alsace-Lorraine</p>
+        <p itemprop="addressLocality">Bordeaux</p>
+        <p itemprop="postalCode">33200</p>
+    </div>
+
+    <!-- Numéro de téléphone -->
+    <p itemprop="telephone">05 56 67 78 89</p>
+
+    <!-- Horaires d'ouverture -->
+	 <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <meta itemprop="dayOfWeek" content="Monday Tuesday Wednesday Thursday Friday"/>
+        <meta itemprop="opens" content="09:00"/>
+        <meta itemprop="closes" content="19:00"/>
+    </div>
+
+    <!-- Affichage des horaires sur la page -->
+    <p>Horaires d'ouverture :</p>
+    <p>Lundi à Vendredi : 09:00 - 19:00</p>
 </div>
 </div>
 <!-- déplacement a la fin pour eviter le blocage -->
