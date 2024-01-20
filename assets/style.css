@@ -69,8 +69,7 @@ body {
 /* ICI des modif height pour  garder un bon rapport hauteur largeur  */
 .picture img {
 	width: 100%;
-	height: auto;
-
+	
 
 }
 #about-me {
@@ -108,7 +107,8 @@ body {
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor:pointer;
 }
 .item-column {
 	position: relative;

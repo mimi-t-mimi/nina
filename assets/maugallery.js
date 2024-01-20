@@ -147,10 +147,10 @@
       }
       let index = 0,
         next = null;
-
+// on fait pereil pour i-1
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i-1 ;
         }
       });
       next =
@@ -160,12 +160,16 @@
     },
     nextImage() {
       let activeImage = null;
+      
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
+         
         }
+       
       });
-      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle"); 
+    
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
@@ -184,14 +188,16 @@
           }
         });
       }
+  
       let index = 0,
-        next = null;
-
+      next = null;
+// on a ajouter un +1 pour pouvoir passer a l'image suivante : on teste le resultat en faisant une alert(,,,,,)
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i+1;
         }
       });
+    
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -218,7 +224,7 @@
                 </div>
             </div>`);
     },
-    
+
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
@@ -240,8 +246,9 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
+      // il manquait la active a cotéd de active tag 
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
